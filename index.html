@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Omar Kamal | Data Analyst Portfolio</title>
 
   <style>
@@ -16,7 +16,6 @@
     body {
       background: #08152f;
       color: white;
-      line-height: 1.6;
     }
 
     .container {
@@ -27,109 +26,107 @@
 
     header {
       text-align: center;
-      padding: 60px 20px 30px;
+      padding: 60px 20px;
     }
 
     header img {
       width: 160px;
       height: 160px;
-      object-fit: cover;
       border-radius: 50%;
+      object-fit: cover;
       border: 4px solid #38bdf8;
       margin-bottom: 20px;
     }
 
     h1 {
+      color: #38bdf8;
       font-size: 42px;
-      color: #38bdf8;
-      margin-bottom: 10px;
-    }
-
-    h2 {
-      font-size: 28px;
-      margin-bottom: 20px;
-      color: #38bdf8;
-      text-align: center;
     }
 
     .subtitle {
-      font-size: 22px;
-      font-weight: bold;
-      margin-bottom: 10px;
+      font-size: 20px;
+      margin: 10px 0;
     }
 
     .intro {
-      max-width: 700px;
-      margin: 0 auto;
       color: #dbeafe;
+      max-width: 700px;
+      margin: auto;
     }
 
     section {
-      padding: 40px 0;
+      margin-top: 40px;
     }
 
-    .about, .skills, .contact {
+    h2 {
+      text-align: center;
+      color: #38bdf8;
+      margin-bottom: 20px;
+    }
+
+    .box {
       background: #10203f;
+      padding: 25px;
       border-radius: 16px;
-      padding: 30px;
-      margin-bottom: 25px;
+      margin-bottom: 20px;
+      text-align: center;
     }
 
-    .skills-list {
+    .skills {
       display: flex;
       flex-wrap: wrap;
-      gap: 12px;
+      gap: 10px;
       justify-content: center;
-      margin-top: 15px;
     }
 
     .skill {
       background: #1e335c;
-      padding: 10px 18px;
-      border-radius: 25px;
-      font-size: 15px;
+      padding: 10px 15px;
+      border-radius: 20px;
     }
 
-    .projects-grid {
+    .projects {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 20px;
     }
 
-    .project-card {
+    .card {
       background: #10203f;
-      border-radius: 16px;
-      overflow: hidden;
       padding: 20px;
+      border-radius: 16px;
       transition: 0.3s;
     }
 
-    .project-card:hover {
+    .card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
     }
 
-    .project-card img {
+    .card img {
       width: 100%;
-      border-radius: 12px;
-      margin-bottom: 15px;
-    }
-
-    .project-card h3 {
-      color: #ffffff;
+      border-radius: 10px;
       margin-bottom: 10px;
     }
 
-    .project-card p {
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    .card p {
       color: #dbeafe;
-      font-size: 15px;
-      margin-bottom: 8px;
+      font-size: 14px;
+      margin-bottom: 6px;
     }
 
     .contact p {
+      margin: 10px 0;
+    }
+
+    footer {
       text-align: center;
-      font-size: 18px;
-      margin: 8px 0;
+      margin-top: 40px;
+      color: #9fb3d9;
+      font-size: 14px;
     }
 
     a {
@@ -137,95 +134,105 @@
       text-decoration: none;
     }
 
-    footer {
-      text-align: center;
-      padding: 25px;
-      color: #9fb3d9;
-      font-size: 14px;
-    }
   </style>
 </head>
+
 <body>
 
-  <div class="container">
+<div class="container">
 
-    <header>
-      <img src="profile.png" alt="Omar Kamal">
-      <h1>Omar Kamal</h1>
-      <p class="subtitle">Data Analyst</p>
-      <p class="intro">
-        Data Analyst specialized in Sales, CRM, and Business Analytics.
-        I build dashboards, analyze performance, and deliver insights that support better business decisions.
-      </p>
-    </header>
+  <!-- HEADER -->
+  <header>
+    <img src="profile.png">
+    <h1>Omar Kamal</h1>
+    <p class="subtitle">Data Analyst</p>
+    <p class="intro">
+      Data Analyst specialized in Sales, CRM, Business & Financial Analysis.
+      I build dashboards, analyze performance, and deliver insights that support better business decisions.
+    </p>
+  </header>
 
-    <section class="about">
-      <h2>About Me</h2>
-      <p style="text-align:center;">
-        I am a Data Analyst with hands-on experience in dashboard development, KPI tracking,
-        sales analysis, CRM reporting, and business performance monitoring. I use Power BI,
-        Excel, Power Query, and SQL to transform raw data into clear insights that improve decision-making.
-      </p>
-    </section>
+  <!-- ABOUT -->
+  <section>
+    <h2>About Me</h2>
+    <div class="box">
+      I am a Data Analyst with experience in dashboards, KPI tracking, CRM, and financial analysis.
+      I use Power BI, Excel, SQL, and Power Query to turn data into decisions.
+    </div>
+  </section>
 
-    <section class="skills">
-      <h2>Skills</h2>
-      <div class="skills-list">
-        <div class="skill">Power BI</div>
-        <div class="skill">Excel</div>
-        <div class="skill">Power Query</div>
-        <div class="skill">SQL</div>
-        <div class="skill">Data Analysis</div>
-        <div class="skill">Data Cleaning</div>
-        <div class="skill">ETL</div>
-        <div class="skill">KPI Tracking</div>
-        <div class="skill">CRM Analysis</div>
-        <div class="skill">Sales Analysis</div>
+  <!-- SKILLS -->
+  <section>
+    <h2>Skills</h2>
+    <div class="box skills">
+      <div class="skill">Power BI</div>
+      <div class="skill">Excel</div>
+      <div class="skill">SQL</div>
+      <div class="skill">Power Query</div>
+      <div class="skill">Data Analysis</div>
+      <div class="skill">Data Cleaning</div>
+      <div class="skill">ETL</div>
+      <div class="skill">KPI Tracking</div>
+      <div class="skill">CRM Analysis</div>
+      <div class="skill">Sales Analysis</div>
+      <div class="skill">Financial Analysis</div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section>
+    <h2>Projects</h2>
+    <div class="projects">
+
+      <div class="card">
+        <img src="sales-dashboard.png">
+        <h3>Sales Dashboard</h3>
+        <p><b>Problem:</b> No clear sales visibility</p>
+        <p><b>Solution:</b> Built KPIs & tracking</p>
+        <p><b>Impact:</b> Better decisions</p>
       </div>
-    </section>
 
-    <section>
-      <h2>Projects</h2>
-      <div class="projects-grid">
-
-        <div class="project-card">
-          <img src="sales-dashboard.png" alt="Sales Dashboard">
-          <h3>Sales Dashboard</h3>
-          <p><strong>Problem:</strong> Limited visibility into sales performance and targets.</p>
-          <p><strong>What I did:</strong> Built KPIs for actual vs target, revenue tracking, and performance monitoring.</p>
-          <p><strong>Impact:</strong> Helped management monitor performance and improve decision-making.</p>
-        </div>
-
-        <div class="project-card">
-          <img src="crm-dashboard.png" alt="CRM Dashboard">
-          <h3>CRM Analysis</h3>
-          <p><strong>Problem:</strong> Sales opportunities and loss reasons were not clearly tracked.</p>
-          <p><strong>What I did:</strong> Analyzed pipeline, conversion rates, and lost opportunities.</p>
-          <p><strong>Impact:</strong> Improved understanding of sales process gaps and follow-up performance.</p>
-        </div>
-
-        <div class="project-card">
-          <img src="hr-dashboard.png" alt="HR Dashboard">
-          <h3>HR Dashboard</h3>
-          <p><strong>Problem:</strong> No clear employee performance tracking system.</p>
-          <p><strong>What I did:</strong> Built dashboards for attendance, tasks, and performance indicators.</p>
-          <p><strong>Impact:</strong> Supported structured employee evaluation and reporting.</p>
-        </div>
-
+      <div class="card">
+        <img src="crm-dashboard.png">
+        <h3>CRM Analysis</h3>
+        <p><b>Problem:</b> Poor tracking</p>
+        <p><b>Solution:</b> Pipeline analysis</p>
+        <p><b>Impact:</b> Better conversion</p>
       </div>
-    </section>
 
-    <section class="contact">
-      <h2>Contact</h2>
+      <div class="card">
+        <img src="financial-analysis.png">
+        <h3>Financial Analysis</h3>
+        <p><b>Problem:</b> No financial insights</p>
+        <p><b>Solution:</b> Revenue & profit dashboard</p>
+        <p><b>Impact:</b> Better planning</p>
+      </div>
+
+      <div class="card">
+        <img src="hr-dashboard.png">
+        <h3>HR Dashboard</h3>
+        <p><b>Problem:</b> No employee tracking</p>
+        <p><b>Solution:</b> Performance dashboard</p>
+        <p><b>Impact:</b> Organized HR system</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section>
+    <h2>Contact</h2>
+    <div class="box contact">
       <p>Email: omaralzayat515@gmail.com</p>
-      <p>GitHub: <a href="https://github.com/Omarkamal111" target="_blank">github.com/Omarkamal111</a></p>
-    </section>
+      <p>GitHub: <a href="https://github.com/Omarkamal111">github.com/Omarkamal111</a></p>
+    </div>
+  </section>
 
-    <footer>
-      © 2026 Omar Kamal - Data Analyst Portfolio
-    </footer>
+  <footer>
+    © 2026 Omar Kamal | Data Analyst Portfolio
+  </footer>
 
-  </div>
+</div>
 
 </body>
 </html>
